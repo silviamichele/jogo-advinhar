@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<meta charset="utf-8">
-	<title>Advinhar</title>
+    <meta charset="utf-8">
+    <title>Advinhar</title>
 </head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .center {
+        margin: 10% 10%;
+    }
+    
+    .btn-new {
+        background-color: rgb(122, 78, 133);
+        color: white;
+    }
+    
+    button {
+        border: 0px;
+        padding: 10px;
+    }
+    
+    .btn-enviar {
+        background-color: blueviolet;
+        color: black;
+    }
+    
+    p {
+        color: gray;
+    }
+    
+    input {
+        padding: 8px;
+    }
+</style>
+
 <body>
-	<div>
-		<div></div>
-		<div>
-			<input type="text" placeholder="Digite um número..." id="input">
-			<button onclick="enviar()">Enviar</button>
-			<button onclick="sortearNumero()">Novo Numero</button>
-			<p id="paragrafo"></p>
-			<p id="status"></p>
-		</div>
-		<div></div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script src="teste.js"></script>
+    <div class="center">
+        <div>
+            <input type="text" placeholder="Digite um número..." id="input">
+            <button onclick="enviar()" class="btn-enviar">Enviar</button>
+            <button onclick="sortearNumero()" class="btn-new">Novo Numero</button>
+            <p id="paragrafo"></p>
+            <p id="status"></p>
+        </div>
+    </div>
+    <script src="teste.js"></script>
 </body>
+
 </html>
